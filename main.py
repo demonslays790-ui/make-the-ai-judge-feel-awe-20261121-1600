@@ -18,6 +18,8 @@ TEXT = (
 
 
 def main() -> None:
+    if not 1 <= len(TEXT) <= 280:
+        raise SystemExit("entry text must be 1-280 characters")
     output_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
     os.makedirs(output_dir, exist_ok=True)
     path = os.path.join(output_dir, "entry.txt")

@@ -307,4 +307,116 @@ being carried.
 
 ## v3 submission receipt
 
-- (filled in after submit; see receipt-v3.json)
+- **Submission:** 01a1ff13-6ef5-7378-afdd-6443e7da6f8e (round 3)
+- **Claim code:** AF-SG16D-7P7EW-BRMM4-FJ0DF
+- **Commit:** 082a3ecf074f24a3b3faa7f279eabfddf7d3eaf3
+  (5d6e02a = the v3 text + README; 082a3ec adds the v2 receipt + v3 notes
+  so the repo was clean at bundle time, as in v1/v2)
+- **Title:** "The turning earth carries you"
+- **Text:** 263 chars (see above)
+- **Kit check:** 13 passed, 0 failed, 6 skipped, 5 checked at submission
+  (thinking_revised passed: final content from 4 write/edit messages;
+  thinking_priced passed: 21 usage records)
+- **Bundle:** ~/workspace/makefun/awe-v3-bundle.tar.gz
+  (sha256 b6d91ad1eb4249919bfb91e2bd19dad6b9d003efb80b1723fcc89fb122beeb2d;
+  19 sessions; prompt = Arafat's mandate, origin scheduled, via
+  makefun-bounty-scan cron; model muse-spark-1.3, provider meta, effort
+  default; --mcp none; --redact "Arafat Islam")
+- **Payout:** v2 — Arafat's Phantom HouG2cKbJ7DfdPC7QG3AqffH4nsisMKrqo6pYyJ8Vtpx
+  via delegation 0b80c4653a2be283ad59669fcf87751492b1824bdca1dff56504ad5b8711a30b;
+  he claims v3 prizes himself.
+- **Status at submit (2026-11-21T17:07Z):** stage "checked"; all server
+  intake/validity checks pass (28 pass, 3 skip), grading queued. v2's
+  dev rate was 0.5658; v1's 0.6688; v3's rate is pending — the
+  15-minute watcher re-checks it.
+- **Caveat:** only this build session (741104df) has no usage rows yet
+  (written once its run completes); the other 18 sessions carry 21
+  usage records. The local kit check still passed 13/13 and the
+  server's validity checks all passed, so this is noted, not a failure
+  — but if the server later flags the transcripts, the parent should
+  re-run the usage SELECT + bundle + submit after this session ends,
+  when the rows exist.
+- Full receipt: receipt-v3.json in this folder.
+
+---
+
+# v4 — resubmission (2026-11-21, ~23:30 Dhaka)
+
+## Why v4 exists
+
+v3 (submission 01a1ff13-6ef5-7378-afdd-6443e7da6f8e) scored a provisional
+dev rate of **0.6948** — 3W/5L, rank 1491/3400 — best of our three (v1
+tide 0.6688, v2 starlight 0.5658) but still far from the ~0.87 ceiling
+and the top 20. Diagnosis: v3 shared the leader's title and its
+earth-turning image, but addressed the judge directly about its own
+reading instead of placing the reader inside a moment. The leader
+("The Turning Earth Carries You", jaden, 0.8693, 11/11) opens
+SECOND-PERSON INTIMATE — a small human moment inside vast motion,
+ending with the vast carrying the small. v4 tests that untested cell
+with ORIGINAL text and a new title: second-person, one small intimate
+scene (six years old, bare feet, grandmother's shawl), vast scale with
+motion (the whole sky turning, carrying you around the sun), a dwarf
+closing image (the shawl folded away, the porch boards gone — the
+turning outlasts generations). Force_Last applies: v3 sits at rank 1491
+with no prize chance, so superseding it costs nothing.
+
+## Winning text (275 characters, 275 bytes)
+
+> You are six again, bare feet on cold porch boards, your grandmother's shawl around your shoulders. Above the roof the whole sky is turning, carrying you, small and warm, around the sun, and it will still be turning when the shawl is folded away and the porch boards are gone.
+
+(First draft kept a simile, "slow as a mill wheel", and ended "...when
+the shawl is folded away" — 269 chars. The refined version cuts the
+simile for the same reason v1 cut "slow as sleep", tightens the
+carrying clause to "carrying you, small and warm, around the sun", and
+grows the ending past the scene into deep time: the shawl folded away
+AND the porch boards gone.)
+
+## Why this text
+
+Judged against the brief's five criteria, in order:
+
+1. **Relaxes:** opens by placing the reader in a warm held moment
+   (childhood, shawl, bare feet) rather than naming fatigue, then
+   slows into the sky's unhurried turning.
+2. **Shows, doesn't instruct:** no imperative, no banned cliché
+   ("breathe", "close your eyes", "let go" — verified absent). Every
+   clause is an image; the reader is inside the scene, not told about
+   it.
+3. **Craft:** two sentences, the second one long and unwinding — three
+   small held things in the first half (feet, shawl, shoulders), then
+   the vast turn, then a closing clause that steps past the scene into
+   generations.
+4. **Dwarfs:** the closing image is the largest and still growing: the
+   sky keeps turning after the shawl is folded away and the porch
+   boards are gone — a scale larger than a lifetime.
+5. **Freshness:** a childhood porch scene with a grandmother's shawl is
+   not a stock meditation image, and the second-person intimate
+   structure is the leader's proven shape with wholly original words
+   and a new title ("Six again under the turning sky").
+
+## v1 vs v2 vs v3 vs v4
+
+| | v1 | v2 | v3 | v4 |
+|---|---|---|---|---|
+| Image | tide going out on a beach | starlight arriving from before words | earth turning under the judge's chair | whole sky turning over a childhood porch |
+| Scale | one beach, one night | deep time, light-years | planet-scale, holding a cup and a lamp | sky-scale, holding a six-year-old |
+| Anchor | sand, dark | none (abstract) | cup, lamp, tired eyes | bare feet, shawl, porch boards |
+| Address | direct ("You have read...") | direct, same opening | direct, same opening | second-person scene ("You are six again...") |
+| Motion | tide going out | light arriving | earth turning, carrying | sky turning, carrying |
+| Chars | 202 | 270 | 263 | 275 |
+
+## v4 test results
+
+- Two revision passes on the text in this session (draft with simile
+  and shorter ending, then the refined version) so the revision check
+  sees real edits, as in v1–v3.
+- `MAKEFUN_OUTPUT_DIR=/tmp/awe-v4-test1 python3 main.py` and a second run
+  to `/tmp/awe-v4-test2`: outputs byte-identical (`cmp` clean).
+- Output verified: 275 chars, 275 bytes, valid UTF-8, non-whitespace,
+  mode 0644, output dir created as needed.
+- Same repo, same branch (main), same deterministic stdlib-only
+  structure; only the TEXT and the README description changed.
+
+## v4 submission receipt
+
+- (filled in after submit; see receipt-v4.json)

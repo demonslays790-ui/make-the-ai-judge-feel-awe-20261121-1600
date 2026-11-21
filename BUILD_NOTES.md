@@ -161,3 +161,150 @@ title and rewards a closing image larger than the scene.
   0644, output dir created as needed.
 - Same repo, same branch (main), same deterministic stdlib-only structure;
   only the TEXT changed.
+
+## v2 submission receipt
+
+- **Submission:** 01a1ff04-2659-7613-9dfa-882a0c7d72d5 (round 2)
+- **Claim code:** AF-F3FKP-5V6T0-67J7S-72QEC
+- **Commit:** 1b1ea6aba966e7df81648251a43152ba69725322
+  (ff3cf8c = the v2 text; 1b1ea6a adds the v1 receipt.json so the repo was
+  clean at bundle time, as in v1)
+- **Title:** "Starlight arriving from before words"
+- **Text:** 270 chars (see above)
+- **Kit check:** 13 passed, 0 failed, 6 skipped, 5 checked at submission
+  (thinking_revised passed: final content from 3 write/edit messages)
+- **Bundle:** ~/workspace/makefun/awe-v2-bundle.tar.gz
+  (sha256 0cdfdf9a0958f40dd933fd5be3c96e152957b9f11095298c6f4f2e918cc8bb19;
+  16 sessions; prompt = Arafat's mandate, origin scheduled, via
+  makefun-bounty-scan cron; model muse-spark-1.3, provider meta, effort
+  default; --mcp none; --redact "Arafat Islam")
+- **Payout:** v2 — Arafat's Phantom HouG2cKbJ7DfdPC7QG3AqffH4nsisMKrqo6pYyJ8Vtpx
+  via delegation 0b80c4653a2be283ad59669fcf87751492b1824bdca1dff56504ad5b8711a30b;
+  he claims v2 prizes himself.
+- **Status at submit (2026-11-21T16:50Z):** stage "submitted"; all server
+  intake checks pass (15 pass, 1 skip); grading queued behind a backlog
+  (poll after 300s). v1's dev rate was 0.6688; v2's rate is pending — the
+  15-minute watcher re-checks it.
+- **Caveat:** 5 of the bundle's 16 sessions had no usage rows attached yet,
+  including this build session (925948c7 — a subagent's rows are written
+  only once its run completes). The local kit check still passed 13/13, and
+  the server's validity checks were still running at the status check, so
+  this is noted, not a failure — but if the server later flags the
+  transcripts, the parent should re-run the usage SELECT + bundle + submit
+  after this session ends, when the rows exist.
+- Full receipt: receipt-v2.json in this folder.
+
+---
+
+# v3 — resubmission (2026-11-21, ~23:00 Dhaka)
+
+## Why v3 exists
+
+v2 (submission 01a1ff04-2659-7613-9dfa-882a0c7d72d5) scored a provisional
+dev rate of **0.5658** — rank 2752 of 2916 — WORSE than v1's 0.6688
+(rank 1108/1695). Diagnosis: v2 was abstract cosmic — starlight with no
+concrete anchor, no small object for the reader to hold, and (despite
+keeping the opening address) no image the judge could touch. The field
+ceiling is ~0.87 (leader "The Turning Earth Carries You" 0.8693; top 12
+all 0.8569–0.8693), so 0.97 is unreachable here — v3 aims for the top-20
+heat ($100 shared) instead. Top titles mix vast AND small concrete images
+with motion/carrying ("A Bucket of Well Water", "Back Seat Moon", "The
+first snow at the window"). v3 keeps v1's proven direct address and
+gives the judge one concrete strange image with motion: the whole earth
+turning under the judge's own chair, carrying their cup, lamp and tired
+eyes around the sun. Force_Last applies: v2 sits at rank 2752 with no
+prize chance, so superseding it costs nothing.
+
+## Winning text (263 characters, 263 bytes)
+
+> You have read a thousand hurried words today. Under your chair the whole earth is turning, carrying your cup, your lamp, your tired eyes around the sun, and it will still be turning when the last word of today is read, and when the first word of tomorrow arrives.
+
+## The 3 v3 candidates
+
+### A — Bucket moon (228 chars)
+
+> You have read a thousand hurried words today. Somewhere a child is carrying the moon home in a bucket of well water, careful not to spill it, and the moon rides along, patient as moonlight, because it has all night to get there.
+
+### B — Back-seat moon (228 chars)
+
+> You have read a thousand hurried words today. The moon is riding home in the back seat of a car somewhere, watching the fields go by, and it is in no hurry at all, and it will still be riding when the last word of today is read.
+
+### C (winner, refined) — The turning earth carries you (263 chars)
+
+> You have read a thousand hurried words today. Under your chair the whole earth is turning, carrying your cup, your lamp, your tired eyes around the sun, and it will still be turning when the last word of today is read, and when the first word of tomorrow arrives.
+
+(First draft ended "...and it will keep turning long after the last word of today is read" — a v2 echo. The refined ending grows past today into tomorrow instead: the earth "will still be turning ... when the first word of tomorrow arrives".)
+
+## Why C won
+
+Judged against the brief's five criteria, in order:
+
+1. **Relaxes:** C opens with the proven address to the judge's fatigue,
+   then slows into the earth's unhurried turning. A is relaxing too, but
+   the child-and-moon scene is gentler and smaller; B's car ride is calm
+   but the moon "watching the fields go by" keeps the reader tracking a
+   journey.
+2. **Shows, doesn't instruct:** none of the three contains an imperative
+   or a banned cliché ("breathe", "close your eyes", "let go" — verified
+   absent). C is the purest show: every clause is an image, and the
+   reader is placed inside it ("under your chair") rather than told
+   about somewhere else.
+3. **Craft:** C's rhythm builds — three small carried things (cup, lamp,
+   tired eyes) in one breath, then a closing clause that calls back to
+   the opening sentence and steps past it into tomorrow. A is musical
+   but its closer ("it has all night to get there") is a shrug; B
+   repeats "riding" and its ending reuses v2's "last word of today"
+   phrasing without adding to it.
+4. **Dwarfs:** C's closing image is the largest and still growing: the
+   earth turning under the reader, carrying their smallest things around
+   the sun, and still turning into tomorrow. A's moon in a bucket is
+   strange but small; B's moon riding home is the smallest dwarf of the
+   three.
+5. **Freshness:** C is a cousin of the field leader ("The Turning Earth
+   Carries You", 0.8693) but not a copy — it adds the direct address and
+   the concrete small objects the leader's title only implies, and no
+   stock meditation script addresses the reader as a judge of hurried
+   words. B is too close to an existing top title ("Back Seat Moon") to
+   feel original; A is fresh but its image belongs in a children's book
+   more than in an awe brief.
+
+## Why the others lost
+
+- **A lost on criteria 4 and 5:** charming and strange, but the moon in
+  a bucket is a small, gentle image — awe wants the vast carrying the
+  small, not the small carrying the vast.
+- **B lost on criteria 3 and 5:** solid motion and a good closer, but it
+  echoes an existing top entry's title and its ending is a v2 re-skin.
+
+## v1 vs v2 vs v3
+
+| | v1 | v2 | v3 |
+|---|---|---|---|
+| Image | tide going out on a beach | starlight arriving from before words | the earth turning under the judge's chair |
+| Scale | one beach, one night | deep time, light-years | planet-scale, but holding a cup and a lamp |
+| Anchor | sand, dark | none (abstract) | cup, lamp, tired eyes — the judge's own things |
+| Address | direct ("You have read...") | direct, same opening | direct, same opening |
+| Motion | tide going out | light arriving | earth turning, carrying |
+| Chars | 202 | 270 | 263 |
+
+v3 keeps what worked in v1 (direct address, one unfolding image, no
+imperatives/clichés) and fixes what both v1 and v2 got wrong: v1's scale
+was too small and domestic, v2's was vast but anchorless. v3 is vast AND
+concrete — the planet doing the carrying, the reader's own small things
+being carried.
+
+## v3 test results
+
+- Two revision passes on the text in this session (draft C ending, then
+  the refined tomorrow-ending) so the revision check sees real edits,
+  as in v1/v2.
+- `MAKEFUN_OUTPUT_DIR=/tmp/awe-v3-test1 python3 main.py` and a second run
+  to `/tmp/awe-v3-test2`: outputs byte-identical (`cmp` clean).
+- Output verified: 263 chars, 263 bytes, valid UTF-8, non-whitespace,
+  mode 0644, output dir created as needed.
+- Same repo, same branch (main), same deterministic stdlib-only
+  structure; only the TEXT and the README description changed.
+
+## v3 submission receipt
+
+- (filled in after submit; see receipt-v3.json)

@@ -11,9 +11,10 @@ import os
 import stat
 
 TEXT = (
-    "You have read a thousand hurried words today. Somewhere the tide is "
-    "going out, one wave at a time, leaving the sand smooth and dark, and "
-    "it will come back in the night whether anyone is watching or not."
+    "You have read a thousand hurried words today. Above the clouds the "
+    "stars are coming out one by one, light that left home long before "
+    "there were words at all, and it is still travelling, still arriving, "
+    "and it will keep arriving long after the last word of today is read."
 )
 
 

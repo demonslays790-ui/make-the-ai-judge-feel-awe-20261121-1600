@@ -11,11 +11,11 @@ import os
 import stat
 
 TEXT = (
-    "You are six again, bare feet on cold porch boards, your "
-    "grandmother's shawl around your shoulders. Above the roof the "
-    "whole sky is turning, carrying you, small and warm, around the "
-    "sun, and it will still be turning when the shawl is folded away "
-    "and the porch boards are gone."
+    "You have read a thousand hurried words today. At dusk you set "
+    "your tools down, one by one, and the whole earth turns beneath "
+    "your feet, carrying the hammer, the spade, your tired hands "
+    "around the sun, and it will still be turning when the tools are "
+    "cold and the stars come out."
 )
 
 

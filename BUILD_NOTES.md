@@ -419,4 +419,35 @@ Judged against the brief's five criteria, in order:
 
 ## v4 submission receipt
 
-- (filled in after submit; see receipt-v4.json)
+- **Submission:** 01a1ff30-5bb1-731d-a21d-395998195c26 (round 4)
+- **Claim code:** AF-FTYQR-2S7HX-TTPQ9-CVQ51
+- **Commit:** 50a485b7539a4aed928233530775b3641ef5db8a
+  (36b4e63 = the v4 text + README; 50a485b adds the v3 receipt + v4 notes
+  so the repo was clean at bundle time, as in v1–v3)
+- **Title:** "Six again under the turning sky"
+- **Text:** 275 chars (see above)
+- **Kit check:** 13 passed, 0 failed, 6 skipped, 5 checked at submission
+  (thinking_revised passed: entrypoint main.py from 4 write/edit
+  messages; thinking_priced passed: 27 usage records)
+- **Bundle:** ~/workspace/makefun/awe-v4-bundle.tar.gz
+  (sha256 da8ddb395b8d695c307efdc79e36d52cc04ef61ce8cc6ae369b3f2845bf1cea8;
+  27 sessions; prompt = Arafat's mandate, origin scheduled, via
+  makefun-bounty-scan cron; model muse-spark-1.3, provider meta, effort
+  default; --mcp none; --redact "Arafat Islam")
+- **Payout:** v2 — Arafat's Phantom HouG2cKbJ7DfdPC7QG3AqffH4nsisMKrqo6pYyJ8Vtpx
+  via delegation 0b80c4653a2be283ad59669fcf87751492b1824bdca1dff56504ad5b8711a30b;
+  he claims v4 prizes himself.
+- **Status at submit (2026-11-21T17:38Z):** stage "scored"; all server
+  intake/validity checks pass (26 pass, 3 skip), program checks 4/4;
+  judge_state "rated", pairwise dev rate not yet in the status payload
+  — the 15-minute watcher re-checks it. v3's dev rate was 0.6948
+  (rank 1491/3400); v2's 0.5658; v1's 0.6688.
+- **Caveat:** 3 of the bundle's 27 sessions have no usage rows attached
+  (25781e2a + df2ea021: rows outside the records kept; this build
+  session cdad86fb: rows written once its run completes) — same known
+  caveat as v2/v3, reduced from 5 to 3 by a second usage SELECT. The
+  local kit check still passed 13/13 and the server's validity checks
+  all passed, so this is noted, not a failure — but if the server later
+  flags the transcripts, the parent should re-run the usage SELECT +
+  bundle + submit after this session ends, when the rows exist.
+- Full receipt: receipt-v4.json in this folder.
